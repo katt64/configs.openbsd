@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# Hand-made OpenVPN rc file.
+
+daemon="openvpn --config /etc/openvpn/ovpn-se.conf --daemon"
+
+. /etc/rc.d/rc.subr
+
+rc_reload=NO
+
+rc_cmd $1
